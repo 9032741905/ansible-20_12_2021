@@ -1,0 +1,9 @@
+---
+- hosts : all
+  become  : yes
+  tasks:
+   - name: install apache on ubuntu
+     apt:
+       name: "{{mywebpackage}}"
+       state: present
+  
